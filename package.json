@@ -1,9 +1,7 @@
 {
   "name": "@brandondvm/davita-react-components",
   "version": "0.1.0",
-  "files": [
-    "./dist"
-  ],
+  "files": ["./dist"],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },

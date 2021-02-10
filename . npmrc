@@ -1,1 +1,2 @@
-registry=https://npm.pkg.github.com/brandondvm
+@brandondvm:registry=https://npm.pkg.github.com/
+//npm.pkg.github.com/:_authToken=a847950d5f9bd2fb7e11531340ff6c6d7a514d78
