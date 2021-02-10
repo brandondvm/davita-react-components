@@ -1,11 +1,11 @@
-import Button from '../components/Button/Button';
+import Button from './components/Button/Button';
 import Checkbox from './components/Checkbox/Checkbox';
-import Counter from '../components/Counter/Counter';
+import Counter from './components/Counter/Counter';
 import Input from './components/Input/Input';
 import RadioButtonGroup from './components/RadioButtonGroup/RadioButtonGroup';
 import SegmentedController from './components/SegmentedController/SegmentedController';
 import Stepper from './components/Stepper/Stepper';
-import ReadOnlyInput from '../components/ReadOnlyInput/ReadOnlyInput';
+import ReadOnlyInput from './components/ReadOnlyInput/ReadOnlyInput';
 
 import './styles/styles.scss';
 
