@@ -1,0 +1,75 @@
+{
+  "name": "@brandondvm/davita-react-components",
+  "version": "0.1.0",
+  "files": [
+    "./dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "git://github.com/brandondvm/davita-react-components.git",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.6.3",
+    "prop-types": "^15.7.2",
+    "react-scripts": "4.0.2",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "npm run storybook",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "clean": "rimraf dist",
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@rollup/plugin-babel": "^5.2.3",
+    "@storybook/addon-actions": "^6.1.17",
+    "@storybook/addon-essentials": "^6.1.17",
+    "@storybook/addon-links": "^6.1.17",
+    "@storybook/node-logger": "^6.1.17",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.1.17",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.0.2",
+    "idx": "^2.5.6",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.38.5",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

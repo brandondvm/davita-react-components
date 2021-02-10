@@ -1,0 +1,55 @@
+.segmented-controller-component {
+  align-items: center;
+  background-color: $palewhitegray;
+  border-radius: 4px;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  padding: 2px 3px;
+
+  &_input {
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+
+    &:checked ~ .segmented-controller-component_item {
+      background-color: $white;
+      border-radius: 4px;
+      font-family: $bold-font;
+    }
+  }
+
+  &_item {
+    align-items: center;
+    background-color: $palewhitegray;
+    color: $onyx;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    font-family: $regular-font;
+    font-size: 14px;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+
+    &_active {
+      background-color: $white;
+      border-radius: 4px;
+      font-family: $bold-font;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline:none;
+  
+      &:active {
+        outline:none;
+      }
+    }
+  }
+}

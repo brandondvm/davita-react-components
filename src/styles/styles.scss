@@ -1,0 +1,172 @@
+@import "./variables";
+@import "../components/index";
+
+* {
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+	position: fixed;
+	overflow: auto;
+	font-family: $regular-font;
+	color: $darkgray;
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	margin: 0;
+	-ms-overflow-style: -ms-autohiding-scrollbar; //avoid scrollbar push content to left in IE
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.428571429;
+	-webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+margin: 0 0 10px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  box-sizing: content-box;
+  height: 0;
+}
+
+label {
+font-weight: normal;
+}
+
+a, a:hover, a:focus, a:visited {
+text-decoration: none;
+outline: none;
+outline-offset: none;
+}
+
+img {
+vertical-align: middle;
+border: 0;
+}
+
+button {
+  text-transform: none;
+  overflow: visible;
+  margin: 0;
+  border: none;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: $mediumdarkgray;
+  font-size: 14px;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: $mediumdarkgray;
+  font-size: 14px;
+  opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $mediumdarkgray;
+  font-size: 14px;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $mediumdarkgray;
+  font-size: 14px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#root {
+  height: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.app-wrapper {
+  margin: 0 auto;
+  max-width: 370px;
+  padding: 23px 8px 16px;
+
+  .btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .segmented-controller-component,
+  .stepper-component {
+    margin-bottom: 20px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  transform: scale(0);
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.storybook-wrapper {
+  max-width: 370px;
+}

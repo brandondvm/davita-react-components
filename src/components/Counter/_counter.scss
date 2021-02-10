@@ -1,0 +1,127 @@
+.counter-component {
+  align-items: center;
+  display: flex;
+  height: 32px;
+  justify-content: space-between;
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  input[type="number"] {
+      -moz-appearance: textfield;
+  }
+
+  &_label-wrapper {
+    align-items: center;
+    display: flex;    
+    p {
+      color: $onyx;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  &_readonly {
+    border: 0;
+    color: $onyx;
+    font-size: 14px;
+    margin: 0;
+    text-align: right;
+    width: 40px;  
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &_label_circle {    
+    border-radius: 100%;
+    display: block;
+    height: 16px;
+    margin-right: 10px;
+    width: 16px;
+    &.yellow {
+      background-color: $orange;
+    }
+    &.green {
+      background-color: $lightgreen;
+    }
+    &.red {
+      background-color: $red;
+    }
+    &.purple {
+      background-color: $purple;
+    }
+  }
+
+  &_input-wrapper {
+    align-items: center;
+    display: flex;    
+    max-width: 96px;
+  }
+
+  &_btn {
+    align-items: center;
+    background-color: $darkblue;
+    border-radius: 30px;
+    color: $white;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    position: relative;
+    width: 24px;
+
+    &::before {
+      border: 1px solid $white;
+      content: '';
+      display: block;
+      height: 0;
+      width: 12px;
+    }
+
+    &.disabled {
+      background-color: $anotherpalegray;
+    }
+  }
+
+  &_btn-decrement { 
+    margin-right: 8px;
+
+    &.disabled {
+      background-color: $anotherpalegray;
+      &::after {
+        border: 1px solid $darkgray;
+      }
+      &::before {
+        border: 1px solid $darkgray;
+      }
+    }
+  }
+
+  &_btn-increment {
+    margin-left: 8px;
+    &::after {
+      border: 1px solid $white;
+      content: '';
+      display: block;
+      height: 12px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      width: 0;
+    }
+  }
+
+  &_input {
+    border: 1px solid $darkgray;
+    border-radius: 4px;
+    font-family: $regular-font;
+    font-size: 15px;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+  }
+}

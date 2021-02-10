@@ -1,0 +1,39 @@
+.stepper-component {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &_step {
+    align-items: center;
+    background: $munsell;
+    border-radius: 30px;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    position: relative;
+    width: 24px;
+
+    &:last-child {
+      margin-right: 0;
+      &::after {
+        content: none;
+      }
+    }
+
+    &_active::before {
+      background: $lightblue;
+      border-radius: 30px;
+      content: '';
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  &_line {
+    background: $munsell;
+    height: 2px;
+    position: absolute;
+    width: 99%;
+  }
+}

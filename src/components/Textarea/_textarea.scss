@@ -1,0 +1,104 @@
+.textarea-component {
+  &_input-area {
+    position: relative;
+
+    &_buttons {
+      background: rgba($inactivebutton, 0.12);
+      border-radius: 4px;
+      position: absolute;
+      right: 8px;
+      top: 27px;
+      height: 32px;
+      padding: 2px;
+      width: 108px;
+
+      button {
+        border-radius: 4px;
+        font-size: 14px;
+        height: 100%;
+        width: 50%;
+      }
+      button.active-button {
+        background-color: $white;
+        font-family: $bold-font;
+      }
+    }
+  }
+
+  label {
+    background: $white;
+    color: $onyx;
+    position: relative;
+    top: 9px;
+    left: 10px;
+    padding: 0 1px;
+
+    &.placeholder {
+      color: $mediumdarkgray;
+      font-size: 14px;
+      position: absolute;
+      top: 13px;
+      pointer-events: none;
+      transition: transform 150ms ease-out;
+    }
+
+    &.regular {
+      text-transform: capitalize;
+      color: $onyx;
+    }
+
+    &.focused {
+      text-transform: capitalize;
+      transform: translateY(-23px);
+    }
+  }
+
+  &_input {
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: $darkgray;
+    color: $lightgray;
+    font-family: $regular-font;
+    font-size: 15px;
+    height: 96px;
+    padding: 12px 10px;
+    width: 100%;
+
+    &:focus {
+      border: 2px solid $blue;
+      color: $darkgray;
+      outline: none;
+    }
+  }
+
+  // Fix for input shadow in Safari
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  &_input.error-present {
+    border: 2px solid $red;
+
+    &:focus {
+      border: 2px solid $red;
+      color: $darkgray;
+    }
+  }
+
+  &_feedback {
+    display: flex;
+    color: $lightgray;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 0 10px;
+    position: relative;
+    width: 100%;
+  }
+
+  &_char-counter {
+    position: absolute;
+    right: 10px;
+  }
+}

@@ -1,0 +1,38 @@
+.btn {
+  background-color: $blue;
+  color: $white;
+  font-family: $bold-font;
+  font-size: 16px;
+  height: 48px;
+  width: 100%;
+
+  &:focus {
+    outline:none;
+
+    &:active {
+      outline:none;
+    }
+  }
+
+  &:disabled {
+    background-color: $palegray;
+    border: none;
+    color: $darkgray;
+    cursor: not-allowed;
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+
+  &.is-filled_white {
+    background-color: $white;
+    border-radius: 3px;
+    border: 2px solid $blue;
+    color: $blue;
+  }
+
+  &.not-filled {
+    background-color: $white;
+    color: $outerSpace;
+    font-family: $bold-font;
+  }
+}

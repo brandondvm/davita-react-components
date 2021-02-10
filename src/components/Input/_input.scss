@@ -1,0 +1,163 @@
+.input-component {
+  &_header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    &_text {
+      color: $onyx;
+      font-family: $bold-font;
+      font-size: 16px;
+      margin: 0;
+    }
+    i {
+      font-size: 20px;
+      margin-left: 5px;
+      width: 28px;
+    }
+  }
+  &_input-area {
+    position: relative;
+    margin-bottom: 8px;
+
+    &_buttons {
+      background: rgba($inactivebutton, 0.12);
+      border-radius: 4px;
+      height: 32px;
+      padding: 2px;
+      position: absolute;
+      right: 8px;
+      top: 27px;
+      width: 108px;
+
+      button {
+        background: rgba($inactivebutton, 0);
+        border-radius: 4px;
+        font-size: 14px;
+        height: 100%;
+        width: 50%;
+      }
+      button.active-button {
+        background-color: $white;
+        font-family: $bold-font;
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    &_unit {
+      color: $inactivebutton;
+      position: absolute;
+      right: 8px;
+      top: 27px;
+      height: 32px;
+      line-height: 18px;
+      font-size: 13px;
+      padding: 6px 0;
+      visibility: hidden;
+      &_no-label {
+        top: 8px;
+      }
+      &.active {
+        visibility: visible;
+      }
+    }
+  }
+
+  label {
+    background: $white;
+    color: $onyx;
+    position: relative;
+    top: 9px;
+    left: 10px;
+    padding: 0 1px;
+
+    &.placeholder {
+      color: $mediumdarkgray;
+      font-size: 14px;
+      position: absolute;
+      top: 13px;
+      pointer-events: none;
+      transition: transform 150ms ease-out;
+    }
+
+    &.regular {
+      text-transform: capitalize;
+      color: $onyx;
+    }
+
+    &.focused {
+      text-transform: capitalize;
+      transform: translateY(-23px);
+    }
+  }
+
+  &_input {
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: $lightgray;
+    color: $darkgray;
+    font-size: 15px;
+    height: 45px;
+    padding: 12px 10px;
+    width: 100%;
+
+    &:focus {
+      border: 2px solid $blue;
+      color: $darkgray;
+      outline: none;
+    }
+  }
+
+  input[type='time'] {
+    font-family: $regular-font!important;
+    &::-moz-clear,
+    &::-webkit-clear-button,
+    &::-webkit-calendar-picker-indicator, 
+    &::-webkit-datetime-edit-ampm-field {
+      display: none;
+    }
+  }
+
+  // Fix for input shadow in Safari
+  input[type='time'],
+  input[type='number'],
+  input[type='text'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  &_input.error-present {
+    border: 2px solid $red;
+
+    &:focus {
+      border: 2px solid $red;
+      color: $darkgray;
+    }
+  }
+
+  &_input.inner-label-present {
+    padding-right: 45px;
+  }
+
+  &_input.select-buttons-present {
+    padding-right: 120px;
+  }
+
+  &_feedback {
+    display: flex;
+    color: $lightgray;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 0 10px;
+    position: relative;
+    width: 100%;
+  }
+
+  &_char-counter {
+    position: absolute;
+    right: 10px;
+  }
+}

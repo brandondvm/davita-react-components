@@ -1,0 +1,44 @@
+.checkbox-component {
+  margin-bottom: 15px;
+
+  &_label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      border-radius: 4px;
+      border: 1px solid $mediumgray;
+      box-sizing: border-box;
+      display: block;
+      font: normal normal normal #{14px}/#{1px} $icon-font;
+		  height: 20px;
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    &.checked {
+      &::before {
+        content: "\2713";
+        background-color: $lightgreen;
+        border-radius: 4px;
+        border: 1px solid $lightgreen;
+        color: $white;
+        font-size: 10px;
+        font-weight: bold;
+        height: 20px;
+        line-height: 15px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  label {
+    color: $onyx;
+    font-size: 14px;
+    margin: 0;
+  }
+}

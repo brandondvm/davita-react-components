@@ -1,0 +1,55 @@
+.radiobutton-component {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 16px;
+  width: 100%;
+
+  input[type="radio"] {
+    margin: 0;
+	}
+
+  &_name {
+    color: $onyx;
+    font-family: $regular-font;
+    font-size: 14px;
+    line-height: 17px;
+  } 
+
+	&_label {
+    cursor: pointer;
+		display: flex;
+
+    &::before {
+      content: "";
+      display: block;
+      background-image: url('../../images/radioButton.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      height: 20px;
+      width: 20px; 
+      margin-right: 10px;
+    }   
+
+		&.is-checked {
+      &::before {
+        background-image: url('../../images/radioButtonActive.svg');
+      }
+		}
+  }
+
+  &_text {
+    color: $onyx;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    span {      
+      font-family: $bold-font;
+    }
+  }
+
+  .input-component {
+    margin-top: 16px;
+  }
+}

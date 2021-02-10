@@ -1,0 +1,38 @@
+.ready-only-input {
+  label {
+    color: $onyx;
+    background: $white;
+    position: relative;
+    top: 9px;
+    left: 0;
+  }
+
+  input {
+    border: 0;
+    color: $lightgray;
+    font-size: 15px;
+    height: 45px;
+    padding: 12px 0;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &_header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    &_text {
+      color: $lightgray;
+      font-family: $bold-font;
+      font-size: 12px;
+      margin: 0;
+    }
+    i {
+      font-size: 12px;
+      width: 18px;
+    }
+  }
+}
