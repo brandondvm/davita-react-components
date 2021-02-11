@@ -1,7 +1,9 @@
 {
   "name": "@brandondvm/davita-react-components",
   "version": "0.1.0",
-  "files": ["./dist"],
+  "files": [
+    "./dist"
+  ],
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "source": "src/components/index.js",
@@ -40,8 +42,6 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.0",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
     "react-scripts": "4.0.2",
     "web-vitals": "^1.1.0"
   },
@@ -51,6 +51,8 @@
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
     "@rollup/plugin-babel": "^5.2.3",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
     "@storybook/addon-actions": "^6.1.17",
     "@storybook/addon-essentials": "^6.1.17",
     "@storybook/addon-links": "^6.1.17",
@@ -62,11 +64,17 @@
     "css-loader": "^5.0.2",
     "idx": "^2.5.6",
     "node-sass": "^5.0.0",
-    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.6",
     "rollup": "^2.38.5",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
+    "sass": "^1.32.7",
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
