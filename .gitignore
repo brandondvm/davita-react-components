@@ -11,6 +11,7 @@
 # production
 /build
 /dist
+/playground
 
 # misc
 .DS_Store
