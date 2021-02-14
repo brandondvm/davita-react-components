@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButtonGroup Component Component renders correctly 1`] = `
+<div
+  className="radiobutton-group-component"
+>
+  <RadioButton
+    inputId="radiobutton1"
+    inputLabel="radiobutton 1"
+    inputName="radioButtonGroup"
+    inputValue="radiobutton 1"
+    isInputChecked={false}
+    onOptionClick={[Function]}
+    watchFields={Array []}
+  />
+  <RadioButton
+    inputId="radiobutton2"
+    inputLabel="radiobutton 2"
+    inputName="radioButtonGroup"
+    inputValue="radiobutton 2"
+    isInputChecked={false}
+    onOptionClick={[Function]}
+    watchFields={Array []}
+  />
+  <RadioButton
+    inputId="radiobutton3"
+    inputLabel="radiobutton 3"
+    inputName="radioButtonGroup"
+    inputValue="radiobutton 3"
+    isInputChecked={false}
+    onOptionClick={[Function]}
+    watchFields={Array []}
+  />
+</div>
+`;

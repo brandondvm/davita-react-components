@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputGroup Component Component renders correctly 1`] = `
+<div
+  className="input-group-component"
+>
+  <React.Fragment>
+    <Input
+      errorMessage={null}
+      id="systolic"
+      innerLabel="mmHg"
+      label="Systolic"
+      name="systolic"
+      placeholder="Systolic"
+      selectButtons={null}
+      type="number"
+    />
+    <span
+      className="input-group-component_divider"
+    >
+      /
+    </span>
+  </React.Fragment>
+  <React.Fragment>
+    <Input
+      errorMessage={null}
+      id="diastolic"
+      innerLabel="mmHg"
+      label="Diastolic"
+      name="diastolic"
+      placeholder="Diastolic"
+      selectButtons={null}
+      type="number"
+    />
+    <span
+      className="input-group-component_divider"
+    >
+      /
+    </span>
+  </React.Fragment>
+</div>
+`;

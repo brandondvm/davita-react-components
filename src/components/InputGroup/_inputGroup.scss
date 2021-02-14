@@ -1,0 +1,15 @@
+.input-group-component {
+  display: flex;
+
+  &_divider {
+    font-size: 16px;
+    margin: 13px 15px 0;
+    &:last-of-type {
+      display: none;
+    }
+  }
+
+  .input-component {
+    width: 100%;
+  }
+}

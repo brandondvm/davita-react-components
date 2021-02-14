@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Component Component renders correctly simple empty field 1`] = `
+<div
+  className="input-component"
+>
+  <div
+    className="input-component_input-area"
+  >
+    
+    <label
+      className="placeholder"
+      htmlFor="input-id"
+      style={
+        Object {
+          "color": false,
+        }
+      }
+    >
+      
+    </label>
+    <input
+      aria-invalid={false}
+      className="input-component_input   "
+      id="input-id"
+      inputMode="text"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+  </div>
+  <div
+    className="input-component_feedback"
+  />
+</div>
+`;
+
+exports[`Input Component Component renders correctly with error 1`] = `
+<div
+  className="input-component"
+>
+  <div
+    className="input-component_input-area"
+  >
+    <label
+      htmlFor="input-id"
+      style={
+        Object {
+          "color": "#CE3616",
+        }
+      }
+    >
+      Label
+    </label>
+    <input
+      aria-invalid={true}
+      className="input-component_input error-present  "
+      id="input-id"
+      inputMode="text"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+  </div>
+  <div
+    className="input-component_feedback"
+  >
+    <span>
+      Error message
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input Component Component renders correctly with label 1`] = `
+<div
+  className="input-component"
+>
+  <div
+    className="input-component_input-area"
+  >
+    <label
+      htmlFor="input-id"
+      style={
+        Object {
+          "color": "#0d1221",
+        }
+      }
+    >
+      Label
+    </label>
+    <input
+      aria-invalid={false}
+      className="input-component_input   "
+      id="input-id"
+      inputMode="text"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+  </div>
+  <div
+    className="input-component_feedback"
+  />
+</div>
+`;
+
+exports[`Input Component Component renders correctly with label 2`] = `
+<div
+  className="input-component"
+>
+  <div
+    className="input-component_input-area"
+  >
+    <label
+      htmlFor="input-id"
+      style={
+        Object {
+          "color": "#0d1221",
+        }
+      }
+    >
+      Label
+    </label>
+    <input
+      aria-invalid={false}
+      className="input-component_input   "
+      id="input-id"
+      inputMode="text"
+      maxLength="20"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+  </div>
+  <div
+    className="input-component_feedback"
+  >
+    <span
+      className="input-component_char-counter"
+    >
+      0
+      /
+      20
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input Component Component renders correctly with select buttons 1`] = `
+<div
+  className="input-component"
+>
+  <div
+    className="input-component_input-area"
+  >
+    
+    <label
+      className="placeholder"
+      htmlFor="input-id"
+      style={
+        Object {
+          "color": false,
+        }
+      }
+    >
+      
+    </label>
+    <input
+      aria-invalid={false}
+      className="input-component_input   select-buttons-present"
+      id="input-id"
+      inputMode="text"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      type="text"
+    />
+    
+    <div
+      className="input-component_input-area_buttons"
+    >
+      <button
+        className="active-button"
+        onClick={[Function]}
+        type="button"
+      >
+        lbs
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        kg
+      </button>
+    </div>
+  </div>
+  <div
+    className="input-component_feedback"
+  />
+</div>
+`;

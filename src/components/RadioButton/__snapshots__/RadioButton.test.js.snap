@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton Component Component renders correctly 1`] = `
+<div
+  className="radiobutton-component"
+>
+  <input
+    aria-checked={true}
+    aria-label="Option 1"
+    className="visually-hidden"
+    defaultChecked={true}
+    id="Option1"
+    name="radioName"
+    onChange={[MockFunction]}
+    type="radio"
+    value={1}
+  />
+  <label
+    className="radiobutton-component_label is-checked"
+    htmlFor="Option1"
+  >
+    Option 1
+  </label>
+</div>
+`;

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stepper Component Component renders correctly 1`] = `
+<div
+  className="stepper-component"
+>
+  <div
+    className="stepper-component_line"
+  />
+  <div
+    className="stepper-component_step stepper-component_step_active"
+  />
+  <div
+    className="stepper-component_step stepper-component_step_active"
+  />
+  <div
+    className="stepper-component_step stepper-component_step_active"
+  />
+  <div
+    className="stepper-component_step "
+  />
+  <div
+    className="stepper-component_step "
+  />
+  <div
+    className="stepper-component_step "
+  />
+</div>
+`;

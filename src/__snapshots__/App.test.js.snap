@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component Component renders correctly 1`] = `
+<div
+  className="app-wrapper"
+>
+  <Stepper
+    steps={6}
+  />
+  <Input
+    id="empty-field"
+    placeholder="Empty field"
+  />
+  <Input
+    id="select-buttons"
+    label="Label"
+    placeholder="Placeholder"
+    selectButtons={
+      Object {
+        "leftButtonLabel": "lbs",
+        "leftButtonOnClick": [Function],
+        "rightButtonLabel": "kg",
+        "rightButtonOnClick": [Function],
+      }
+    }
+  />
+  <br />
+  <Input
+    errorMessage="Error message"
+    id="input-error"
+    label="Label"
+    placeholder="Placeholder"
+  />
+  <Input
+    id="inner-label"
+    innerLabel="Units"
+    label="Label"
+    placeholder="Placeholder"
+  />
+  <Input
+    characterMax="20"
+    id="char-max"
+    label="Label"
+    placeholder="Placeholder"
+  />
+  <ReadOnlyInput
+    label="Read Only"
+    value="Read only text"
+  />
+  <SegmentedController
+    controllerOptions={
+      Array [
+        Object {
+          "checked": true,
+          "id": "option1",
+          "label": "option 1",
+          "name": "segmentedControllerOption",
+          "value": 1,
+        },
+        Object {
+          "checked": false,
+          "id": "option2",
+          "label": "option 2",
+          "name": "segmentedControllerOption",
+          "value": 2,
+        },
+        Object {
+          "checked": false,
+          "id": "option3",
+          "label": "option 3",
+          "name": "segmentedControllerOption",
+          "value": 3,
+        },
+      ]
+    }
+  />
+  <Checkbox
+    checked={true}
+    id="checkbox1"
+    label="Option 1"
+    name="checkbox1"
+    onChange={[Function]}
+  />
+  <Checkbox
+    id="checkbox2"
+    label="Option 2"
+    name="checkbox2"
+    onChange={[Function]}
+  />
+  <RadioButtonGroup
+    onItemClick={[Function]}
+    options={
+      Array [
+        Object {
+          "checked": true,
+          "id": "radioOption1",
+          "label": "Option 1",
+          "name": "radiobuttongroup",
+          "value": 1,
+        },
+        Object {
+          "checked": false,
+          "id": "radioOption2",
+          "label": "Option 2",
+          "name": "radiobuttongroup",
+          "value": 2,
+        },
+        Object {
+          "checked": false,
+          "id": "radioOption3",
+          "label": "Option 3",
+          "name": "radiobuttongroup",
+          "value": 3,
+        },
+      ]
+    }
+    register={[Function]}
+  />
+  <Counter
+    label="1.5% Yellow Bag"
+  />
+  <br />
+  <Button
+    label="Next"
+    onClick={[Function]}
+  />
+  <Button
+    disabled={true}
+    label="Disabled"
+  />
+</div>
+`;

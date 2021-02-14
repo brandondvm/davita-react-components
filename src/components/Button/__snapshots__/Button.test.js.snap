@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component Component renders correctly when disabled prop is set to false 1`] = `
+<button
+  className="btn blue small"
+  disabled={false}
+  onClick={[MockFunction]}
+  type="button"
+>
+  Small button label
+</button>
+`;
+
+exports[`Button Component Component renders correctly when disabled prop is set to true 1`] = `
+<button
+  className="btn blue small"
+  disabled={true}
+  onClick={[MockFunction]}
+  type="button"
+>
+  Small button label
+</button>
+`;

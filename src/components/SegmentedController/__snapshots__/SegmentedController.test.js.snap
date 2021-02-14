@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Segmented Controller Component Component renders correctly 1`] = `
+<div
+  className="segmented-controller-component"
+>
+  <div
+    className="segmented-controller-component_item"
+  >
+    <input
+      className="segmented-controller-component_input checked"
+      defaultChecked={true}
+      id="bloodPressureOption1"
+      name="bloodPressureState"
+      role="button"
+      type="radio"
+      value="Sitting"
+    />
+    <label
+      className="segmented-controller-component_item"
+      htmlFor="bloodPressureOption1"
+      onClick={[Function]}
+      role="button"
+    >
+      Sitting
+    </label>
+  </div>
+  <div
+    className="segmented-controller-component_item"
+  >
+    <input
+      className="segmented-controller-component_input "
+      defaultChecked={false}
+      id="bloodPressureOption2"
+      name="bloodPressureState"
+      role="button"
+      type="radio"
+      value="Standing"
+    />
+    <label
+      className="segmented-controller-component_item"
+      htmlFor="bloodPressureOption2"
+      onClick={[Function]}
+      role="button"
+    >
+      Standing
+    </label>
+  </div>
+  <div
+    className="segmented-controller-component_item"
+  >
+    <input
+      className="segmented-controller-component_input "
+      defaultChecked={false}
+      id="bloodPressureOption3"
+      name="bloodPressureState"
+      role="button"
+      type="radio"
+      value="lying"
+    />
+    <label
+      className="segmented-controller-component_item"
+      htmlFor="bloodPressureOption3"
+      onClick={[Function]}
+      role="button"
+    >
+      Lying
+    </label>
+  </div>
+</div>
+`;
