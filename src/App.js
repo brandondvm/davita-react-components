@@ -7,8 +7,6 @@ import SegmentedController from './components/SegmentedController/SegmentedContr
 import Stepper from './components/Stepper/Stepper';
 import ReadOnlyInput from './components/ReadOnlyInput/ReadOnlyInput';
 
-import HelloWorld from './components/HelloWorld/HelloWorld';
-
 import './styles/styles.scss';
 
 const radioGroupItems = [
@@ -37,7 +35,7 @@ const handleButtonClick = () => {
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-wrapper">
       <Stepper steps={ 6 } />
       <Input id="empty-field" placeholder="Empty field"/>
       <Input selectButtons={{
@@ -63,7 +61,6 @@ function App() {
       <br />
       <Button label="Next" onClick={ handleButtonClick } />
       <Button label="Disabled" disabled={ true } />
-      <HelloWorld />
     </div>
   );
 }

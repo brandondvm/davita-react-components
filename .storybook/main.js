@@ -9,16 +9,5 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/preset-create-react-app",
     "@storybook/preset-scss"
-  ],
-  webpackFinal: config => {
-    config.module.rules.push({
-      test: /\.svg$/, 
-      loader: 'file-loader' 
-    });
-    config.module.rules.push({
-      test: /\.scss$/,
-      use: ['style-loader', 'css-loader', 'sass-loader'],
-    });    
-    return config;
-  },
+  ]
 }

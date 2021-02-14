@@ -46,7 +46,10 @@ const RadioButtonGroup = ({ options = [], label, register, watch, watchFields = 
 RadioButtonGroup.propTypes = {
   options: PropTypes.array,
   register: PropTypes.func,
-  watchFields: PropTypes.object
+  watchFields: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+  ]),
 };
 
 export default RadioButtonGroup;

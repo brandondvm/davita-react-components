@@ -5,6 +5,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import del from 'rollup-plugin-delete';
 import pkg from './package.json';
 import postcss from "rollup-plugin-postcss";
+import postcssUrl from 'postcss-url';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -14,14 +15,19 @@ export default {
         { file: pkg.module, format: 'esm' }
     ],
     plugins: [
-        peerDepsExternal(),        
+        peerDepsExternal(),
+        postcss({
+            inject: true,
+            plugins: [
+                postcssUrl({ url: 'inline' })                
+            ]            
+        }),
         babel({
             exclude: 'node_modules/**'
         }),
         del({ targets: ['dist/*'] }),
         resolve(),
-        commonjs(),
-        postcss()
+        commonjs(),        
     ],
     external: Object.keys(pkg.peerDependencies || {}),
 };

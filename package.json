@@ -1,6 +1,6 @@
 {
   "name": "@brandondvm/davita-react-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "files": [
     "./dist"
   ],
@@ -37,11 +37,22 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ],
+    "coverageReporters": [
+      "text"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.0",
     "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-scripts": "4.0.2",
     "web-vitals": "^1.1.0"
   },
@@ -60,11 +71,16 @@
     "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.1.17",
+    "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.0.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "idx": "^2.5.6",
     "node-sass": "^5.0.0",
     "postcss": "^8.2.6",
+    "postcss-url": "^10.1.1",
+    "resolve-url-loader": "^3.1.2",
     "rollup": "^2.38.5",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -73,8 +89,5 @@
     "sass-loader": "^10.1.1",
     "style-loader": "^2.0.0"
   },
-  "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  }
+  "peerDependencies": {}
 }

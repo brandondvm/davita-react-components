@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
+import enzyme from 'enzyme';
+import React from 'react';
+
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+function setup() {
+  return enzyme.shallow(<App />);
+}
+
+describe('App Component', () => {
+  test('Component renders correctly', () => {
+    const wrapper = setup();
+    expect(wrapper.get(0)).toMatchSnapshot();
+  });
 });
